@@ -1,46 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Tabel dengan garis dan cellpadding dan cellspacing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+   <style>
+    .box{
+        margin-top: 30px;
+        font-family: "Josefin Sans", sans-serif;
+    }
+    .btn{
+        border: 10px;
+        background-color: rgb(112, 177, 233);
+        border-radius: 15px;
+        text-decoration: dashed;
+        padding: 10px;
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+    th{
+        background-color: rgb(20, 206, 206);
+    }
+    table{
+        border-collapse: collapse;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+   </style>
 </head>
 <body>
-    <table border="1" cellpadding="5" cellspacing="0">
-      <h1>Menu Makanan</h1>
-      <button>Tambah</button>
-        <!-- Bagian kepala tabel -->
-        <thead>
+    <div class="box">
+        <h1> Barang - Barang </h1>
+        <table border="1" style="background-color: rgb(243, 243, 239);" width="70px"> 
+        <a href="tambah.html" class="btn">Tambah</a>
+        <tr>
+            <th>No</th>
+            <th>Nama Barang</th>
+            <th>Kode Barang</th>
+            <th>Tanggal Masuk</th>
+            <th>Tanggal Expired</th>
+            <th>Jumlah Stock</th>
+            <th>Harga Beli</th>
+            <th>Harga Jual</th>
+        </tr>
             <tr>
-              <th>No</th>
-              <th>Nama</th>
-              <th>Harga</th>
-              <th>Gambar</th>
+                <td>1</td>
+                <td>Popcorn</td>
+                <td>SDQ5SHR2NQ</td>
+                <td>20-04-24</td>
+                <td>19-04-25</td>
+                <td>110</td> 
+                <td>12.000</td>
+                <td>15.000</td>
+
             </tr>
-        </thead>
-        <!-- Bagian body tabel -->
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Mochi</td>
-            <td>Rp. 25.000</td>
-            <td>
-              <img src="Mochi.jpeg" alt="" height="150px" width="150px"> 
-            </td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Dimsum</td>
-            <td>Rp. 30.000</td>
-            <td>
-              <img src="Dimsum.jpeg" alt="" height="150px" width="150px"></td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Cake</td>
-            <td>Rp. 150.000</td>
-            <td>
-              <img src="Cake.jpeg" alt="" height="150px" width="150px"></td>
-          </tr>
-        </tbody>
+            <tr>  
+                <td>2</td>
+                <td>Oreo</td>
+                <td>MGWK8KJQ2Z</td>
+                <td>5-07-24</td>
+                <td>5-07-25</td>
+                <td>120</td> 
+                <td>10.000</td>
+                <td>13.500</td> 
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Pocky</td>
+                <td>QPJRC6L3JK</td>
+                <td>14-10-24</td>
+                <td>13-10-25</td>
+                <td>225</td> 
+                <td>12.900</td>
+                <td>15.400</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Pillows</td>
+                <td>WZXKG2RKB4</td>
+                <td>23-09-24</td>
+                <td>24-09-25</td>
+                <td>186</td> 
+                <td>15.500</td>
+                <td>20.000</td> 
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Croissant</td>
+                <td>BGQP6HSCH2</td>
+                <td>14-06-24</td>
+                <td>14-07-25</td>
+                <td>150</td> 
+                <td>7.200</td>
+                <td>10.500</td>
+            </tr>
     </table>
+</div>
 </body>
 </html>
